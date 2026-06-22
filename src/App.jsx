@@ -1,6 +1,6 @@
 import React from "react";
 import { peliculas } from "./data/peliculas";
-import PeliculaCard from "./components/PeliculaCard";
+import ListaPeliculas from "./components/ListaPeliculas";
 
 function App() {
   console.log("Películas cargadas:", peliculas);
@@ -8,17 +8,7 @@ function App() {
   return (
     <div>
       <h1>Lista de Películas</h1>
-      {peliculas.map((pelicula) => (
-        <PeliculaCard
-          key={pelicula.id}
-          titulo={pelicula.titulo}
-          genero={pelicula.genero}
-          duracion={pelicula.duracion}
-          clasificacion={pelicula.clasificacion}
-          sinopsis={pelicula.sinopsis}
-          horarios={pelicula.horarios}
-        />
-      ))}
+      <ListaPeliculas peliculas={peliculas} />
     </div>
   );
 }

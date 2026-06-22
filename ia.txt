@@ -1,9 +1,14 @@
 === Etapa 1 ===
 Prompt: "importa el array (peliculas.js)  aca en app.jsx y verificar en que consola la carga con console.log"
-Resultado: me generó la estructura pero no extrajo con la carpeta data provocando el error y de manera manual traspasar la carpeta al codigo.
+Resultado: yo hice el archivo peliculas.js y la IA me generó la estructura pero no extrajo con la carpeta data provocando el error y de manera manual traspasar la carpeta al codigo.
 Utilidad: parcialmente útil.
 
 === Etapa 2 ===
 Prompt: "el componente recibe por props: titulo, genero, duración, clasificación, sinopsis y horarios. Muestra la información de forma visual y ordenada y aplica un estilo diferenciado según la clasificación (un color/etiqueta distinto para TE, +14, +18)."
-Resultado: me generó la estructura pero extrajo un archivo inexistente y le pedi que arreglara esa parte porque se podia poner el css en el archivo mismo.
+Resultado: Yo hice el componente de peliculacard me generó la estructura pero extrajo un archivo inexistente y le pedi que arreglara esa parte porque se podia poner el css en el archivo mismo.
 Utilidad: parcialmente útil.
+
+=== Etapa 3 ===
+Prompt: "que el componente ListaPeliculas reciba el array peliculas.js por props, que recorra el array con .map() y renderiza un PeliculaCard por cada pelicula, asigna correctamente la prop key usando el id de cada elemento (no usar el indice del array) y en app.jsx renderiza listapeliculas pasandole los datos importados."
+Resultado: yo hice el archivo listapeliculas y me generó la estructura completa del componente y de como iria en app.jsx.
+Utilidad: útil.
