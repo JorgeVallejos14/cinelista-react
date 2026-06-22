@@ -1,0 +1,4 @@
+=== Etapa 1 ===
+Prompt: "importa el array (peliculas.js)  aca en app.jsx y verificar en que consola la carga con console.log"
+Resultado: me generó la estructura pero no extrago con la carpeta data provocando el error y de manera manual traspasar la carpeta al codigo.
+Utilidad: parcialmente útil.
