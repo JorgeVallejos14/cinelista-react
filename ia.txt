@@ -10,5 +10,11 @@ Utilidad: parcialmente útil.
 
 === Etapa 3 ===
 Prompt: "que el componente ListaPeliculas reciba el array peliculas.js por props, que recorra el array con .map() y renderiza un PeliculaCard por cada pelicula, asigna correctamente la prop key usando el id de cada elemento (no usar el indice del array) y en app.jsx renderiza listapeliculas pasandole los datos importados."
-Resultado: yo hice el archivo listapeliculas y me generó la estructura completa del componente y de como iria en app.jsx.
+Resultado: yo hice el componente listapeliculas y la IA me generó la estructura completa del componente y de como iria en app.jsx.
 Utilidad: útil.
+
+=== Etapa 4 ===
+Prompt: "que el componente FiltroClasificacion este con botones o un selector para filtrar por la clasificación: "Todas", "TE", "+14", "+18", en App.jsx usar useState para guardar el filtro seleccionado y un campo de busqueda por titulo, aplicar ambos filtros sobre el array antes de pasarlo a ListaPeliculas y usar renderizado condicional para mostrar el mensaje "No hay peliculas que coincidan" cuando el resultado quede vacio."
+Resultado: yo hice el componente FiltroClasificacion y la IA me generó la estructura completa del componente y la importación de app.jsx con el filtro de busqueda o con la calificación.
+Utilidad: útil.
+
