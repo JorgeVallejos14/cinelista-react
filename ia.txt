@@ -5,6 +5,7 @@ Utilidad: parcialmente útil.
 
 === Etapa 2 ===
 Prompt: "el componente recibe por props: titulo, genero, duración, clasificación, sinopsis y horarios. Muestra la información de forma visual y ordenada y aplica un estilo diferenciado según la clasificación (un color/etiqueta distinto para TE, +14, +18)."
+Prompt de correcion: es necesario el archivo css?? pq creo q igual se puede desde el mismo archivo.
 Resultado: Yo hice el componente de peliculacard me generó la estructura pero extrajo un archivo inexistente y le pedi que arreglara esa parte porque se podia poner el css en el archivo mismo.
 Utilidad: parcialmente útil.
 
@@ -15,6 +16,12 @@ Utilidad: útil.
 
 === Etapa 4 ===
 Prompt: "que el componente FiltroClasificacion este con botones o un selector para filtrar por la clasificación: "Todas", "TE", "+14", "+18", en App.jsx usar useState para guardar el filtro seleccionado y un campo de busqueda por titulo, aplicar ambos filtros sobre el array antes de pasarlo a ListaPeliculas y usar renderizado condicional para mostrar el mensaje "No hay peliculas que coincidan" cuando el resultado quede vacio."
-Resultado: yo hice el componente FiltroClasificacion y la IA me generó la estructura completa del componente y la importación de app.jsx con el filtro de busqueda o con la calificación.
+Resultado: yo hice el componente FiltroClasificacion y la IA me generó la estructura completa del componente y la importación de app.jsx con el filtro de busqueda o con la clasificación de edad.
 Utilidad: útil.
 
+=== Etapa 5 ===
+Prompt: "En descatar funciones de hoy el primer paso es resaltar visualmente los elementos con funcionHoy: true (por ejemplo, una etiqueta "HOY" o un borde distinto) y agregar un contador que muestre cuantas peliculas se exhiben hoy."
+Resultado: La IA me genero la infraestructura final y en la pagina aparecen el contador de que peliculas se estrenan hoy incluyendo con los filtros de clasificación de edad.
+Utilidad: útil.
+
+Reflexión tecnica: COPILOT es una buena herramienta si uno lo sabe usar bien y que funciona rapido pero aveces tiene problemas como el dar archivos erroneos o inexistentes lo cual es normal si no das un buen prompt.

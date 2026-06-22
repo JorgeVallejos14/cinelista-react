@@ -15,6 +15,9 @@ function App() {
     return coincideClasificacion && coincideTitulo;
   });
 
+  // Contar las películas que se exhiben hoy
+  const peliculasHoy = peliculasFiltradas.filter((pelicula) => pelicula.funcionHoy);
+
   return (
     <div>
       <h1>Lista de Películas</h1>
@@ -24,6 +27,9 @@ function App() {
         filtroTitulo={filtroTitulo}
         setFiltroTitulo={setFiltroTitulo}
       />
+      <p>
+        <strong>Películas que se exhiben hoy:</strong> {peliculasHoy.length}
+      </p>
       {peliculasFiltradas.length > 0 ? (
         <ListaPeliculas peliculas={peliculasFiltradas} />
       ) : (

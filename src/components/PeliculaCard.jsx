@@ -1,10 +1,9 @@
 import React from "react";
 
-function PeliculaCard({ titulo, genero, duracion, clasificacion, sinopsis, horarios }) {
-  // Estilos generales
+function PeliculaCard({ titulo, genero, duracion, clasificacion, sinopsis, horarios, funcionHoy }) {
   const styles = {
     card: {
-      border: "1px solid #ccc",
+      border: funcionHoy ? "2px solid green" : "1px solid #ccc", // Resaltar si es función de hoy
       borderRadius: "8px",
       padding: "16px",
       margin: "16px",
@@ -15,40 +14,30 @@ function PeliculaCard({ titulo, genero, duracion, clasificacion, sinopsis, horar
       fontSize: "1.5rem",
       marginBottom: "8px",
     },
-    genero: {
-      margin: "4px 0",
+    etiquetaHoy: {
+      display: funcionHoy ? "inline-block" : "none",
+      backgroundColor: "green",
+      color: "white",
+      padding: "4px 8px",
+      borderRadius: "4px",
+      marginLeft: "8px",
+      fontSize: "0.9rem",
     },
-    duracion: {
-      margin: "4px 0",
-    },
-    sinopsis: {
-      margin: "4px 0",
-    },
-    horarios: {
-      paddingLeft: "20px",
-    },
-  };
-
-  // Estilos según la clasificación
-  const clasificacionStyles = {
-    TE: { color: "green", fontWeight: "bold" },
-    "+14": { color: "orange", fontWeight: "bold" },
-    "+18": { color: "red", fontWeight: "bold" },
-    default: { color: "gray", fontWeight: "bold" },
   };
 
   return (
     <div style={styles.card}>
-      <h2 style={styles.titulo}>{titulo}</h2>
-      <p style={styles.genero}>Género: {genero}</p>
-      <p style={styles.duracion}>Duración: {duracion} minutos</p>
-      <p style={clasificacionStyles[clasificacion] || clasificacionStyles.default}>
-        Clasificación: {clasificacion}
-      </p>
-      <p style={styles.sinopsis}>Sinopsis: {sinopsis}</p>
+      <h2 style={styles.titulo}>
+        {titulo}
+        <span style={styles.etiquetaHoy}>HOY</span>
+      </h2>
+      <p>Género: {genero}</p>
+      <p>Duración: {duracion} minutos</p>
+      <p>Clasificación: {clasificacion}</p>
+      <p>Sinopsis: {sinopsis}</p>
       <div>
         <h4>Horarios:</h4>
-        <ul style={styles.horarios}>
+        <ul>
           {horarios.map((horario, index) => (
             <li key={index}>{horario}</li>
           ))}
