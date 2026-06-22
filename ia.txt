@@ -1,4 +1,9 @@
 === Etapa 1 ===
 Prompt: "importa el array (peliculas.js)  aca en app.jsx y verificar en que consola la carga con console.log"
-Resultado: me generó la estructura pero no extrago con la carpeta data provocando el error y de manera manual traspasar la carpeta al codigo.
+Resultado: me generó la estructura pero no extrajo con la carpeta data provocando el error y de manera manual traspasar la carpeta al codigo.
+Utilidad: parcialmente útil.
+
+=== Etapa 2 ===
+Prompt: "el componente recibe por props: titulo, genero, duración, clasificación, sinopsis y horarios. Muestra la información de forma visual y ordenada y aplica un estilo diferenciado según la clasificación (un color/etiqueta distinto para TE, +14, +18)."
+Resultado: me generó la estructura pero extrajo un archivo inexistente y le pedi que arreglara esa parte porque se podia poner el css en el archivo mismo.
 Utilidad: parcialmente útil.
